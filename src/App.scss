@@ -1,0 +1,28 @@
+img {
+  max-width: 400px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: cornsilk;
+}
+
+
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: bisque;
+
+  &__title {
+
+  }
+
+  &__nav {
+    padding: 4px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
