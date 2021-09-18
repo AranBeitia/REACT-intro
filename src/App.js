@@ -71,13 +71,14 @@ class App extends Component {
   // }
 
 	render() {
+    const { user, count } = this.state
 		return (
 			<main className="App">
-				<p>Counter: {this.state.count}</p>
+				<p>Counter: {count}</p>
         <button onClick={this.increment}>Increment</button>
-        <button onClick={this.login}>login</button>
-        <button onClick={this.logout}>logout</button>
         <div>
+        <button onClick={this.login} className={user.isLoggedIn ? 'is-hidden': ''}>login</button>
+        <button onClick={this.logout} className={!user.isLoggedIn ? 'is-hidden': ''}>logout</button>
           {this.state.user.firstName && <p>{this.state.user.firstName}</p>}
         </div>
 			</main>
