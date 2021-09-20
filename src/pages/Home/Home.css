@@ -1,0 +1,15 @@
+.content__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.product-list {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-form {
+    flex: 1;
+}
